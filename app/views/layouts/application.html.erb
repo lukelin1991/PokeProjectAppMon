@@ -7,9 +7,14 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.css'>
   </head>
 
   <body>
+    <%= link_to "Home Page", to: "welcome#index" %> |
+    <%= link_to "Pokemon Page", pokemons_path %> |
+    <%= link_to "Gyms", gymleaders_path %> |
+    <hr>
     <%= yield %>
   </body>
 </html>

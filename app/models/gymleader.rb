@@ -1,0 +1,2 @@
+class Gymleader < ApplicationRecord
+end
