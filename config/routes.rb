@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   resources :gymleaders
   resources :pokemons
   
-  root :to =>  "welcome#index"
+  resources :welcome, only: [:show, :index]
 end
