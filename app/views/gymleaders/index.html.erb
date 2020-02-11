@@ -2,7 +2,7 @@
 <ul>
 <% @gymleaders.each do |gymleader| %>
  <li><%= link_to gymleader.name, gymleader_path(gymleader)%><br>
- <img src= <%=gymleader.attack%>>
+ <img src= <%=gymleader.headshot%>>
 <% end %></li>
 </ul>
 </div>

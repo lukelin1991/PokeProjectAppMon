@@ -1,11 +1,10 @@
 
-
-<div>
-<ol>
-<% @pokemons.each do |pokemon| %>
- <li><%= link_to pokemon.name, pokemon_path(pokemon)%><br>
- <img src= <%=pokemon.attack%>>
-<% end %></li>
-</0l>
+<div class="pokemon-tile">
+    <% @pokemons.each do |pokemon| %>
+        <li><%= link_to pokemon.name, pokemon_path(pokemon)%><br>
+        <img class="img-center" src=<%=pokemon.sprite%>></li>
+    <% end %>
 </div>
+
+
 
