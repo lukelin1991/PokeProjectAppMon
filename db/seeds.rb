@@ -10,4 +10,7 @@ gio = Gymleader.create(name: "Giovanni", specialty: "Ground", city: "Viridian Ci
 
 #----------------------Pokemon-----------------------#
 
+#----------------------Badges------------------------#
+
+#---------------------Pokeballs----------------------#
 p "I seeded all over myself."
