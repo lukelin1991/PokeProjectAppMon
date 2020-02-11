@@ -1,0 +1,8 @@
+<div>
+<ul>
+<% @gymleaders.each do |gymleader| %>
+ <li><%= link_to gymleader.name, gymleader_path(gymleader)%><br>
+ <img src= <%=gymleader.attack%>>
+<% end %></li>
+</ul>
+</div>
