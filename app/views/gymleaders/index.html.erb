@@ -1,8 +1,16 @@
+ <img src= "../gymleader_images/kantogymleaders.jpg" alt="Picture goes here">
+
+
+
+
+
+
+
 <div>
 <ul>
 <% @gymleaders.each do |gymleader| %>
  <li><%= link_to gymleader.name, gymleader_path(gymleader)%><br>
- <img src= <%=gymleader.attack%>>
 <% end %></li>
 </ul>
 </div>
+

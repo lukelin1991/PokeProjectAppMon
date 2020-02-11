@@ -1,6 +1,6 @@
 
 Pokemon.destroy_all
-
+Gymleader.destroy_all
 # ----------------------Gym Leaders ----------------#
 brock = Gymleader.create(name: "Brock", specialty: "Rock", city: "Pewter City", badge_name: "Boulder Badge")
 misty = Gymleader.create(name: "Misty", specialty: "Water", city: "Cerulean City", badge_name: "Cascade Badge")
@@ -137,7 +137,7 @@ goldeen = Pokemon.create(name: "Goldeen", attack: "https://img.pokemondb.net/spr
 seaking = Pokemon.create(name: "Seaking", attack: "https://img.pokemondb.net/sprites/black-white/anim/normal/seaking.gif")
 staryu = Pokemon.create(name: "Staryu", attack: "https://img.pokemondb.net/sprites/black-white/anim/normal/staryu.gif")
 starmie = Pokemon.create(name: "Starmie", attack: "https://img.pokemondb.net/sprites/black-white/anim/normal/starmie.gif")
-mr_mime = Pokemon.create(name: "Mr. Mime", attack: "https://img.pokemondb.net/sprites/black-white/anim/normal/mr_mime.gif")
+mr_mime = Pokemon.create(name: "Mr. Mime", attack: "https://img.pokemondb.net/sprites/black-white/anim/normal/mr-mime.gif")
 scyther = Pokemon.create(name: "Scyther", attack: "https://img.pokemondb.net/sprites/black-white/anim/normal/scyther.gif")
 jynx = Pokemon.create(name: "Jynx", attack: "https://img.pokemondb.net/sprites/black-white/anim/normal/jynx.gif")
 electabuzz = Pokemon.create(name: "Electabuzz", attack: "https://img.pokemondb.net/sprites/black-white/anim/normal/electabuzz.gif")
