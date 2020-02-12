@@ -13,9 +13,31 @@
  *= require_tree .
  *= require_self
  */
+ body {
+    text-align: center;
+}
 
- .img-center{
+img {
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.badge_img {
+    height: 18%;
+    width: 18%;
+}
+
+  li {
+    display: inline-block;
+    margin: 20px;
+    border: 5px solid yellowgreen;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+.img-center{
     display: block;
     margin-left: auto;
     margin-right: auto;
- }
+}
