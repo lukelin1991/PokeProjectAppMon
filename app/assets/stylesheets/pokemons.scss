@@ -2,7 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .text-align-container {
-    text-align: center;
+    text-align: inline;
+    opacity: 100%;
+    border: 5px solid darkred;
+    border-radius: 8px;
+    width: 320px;
   }
 
   li {
@@ -18,6 +22,4 @@
     margin-right: auto;
  }
 
- h3 {
-  color: black;
-}
+ 
