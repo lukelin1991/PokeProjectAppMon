@@ -13,7 +13,6 @@
 ActiveRecord::Schema.define(version: 2020_02_10_204841) do
 
   create_table "badges", force: :cascade do |t|
-    t.string "name"
     t.integer "trainer_id"
     t.integer "gymleader_id"
     t.datetime "created_at", null: false
@@ -27,6 +26,11 @@ ActiveRecord::Schema.define(version: 2020_02_10_204841) do
     t.string "specialty"
     t.string "city"
     t.string "badge_name"
+    t.string "badge_img"
+    t.string "portrait"
+    t.string "headshot"
+    t.string "sprite"
+    t.string "fullbody"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -45,7 +49,9 @@ ActiveRecord::Schema.define(version: 2020_02_10_204841) do
 
   create_table "pokemons", force: :cascade do |t|
     t.string "name"
-    t.string "type"
+    t.string "poke_type"
+    t.string "sprite"
+    t.string "big_img"
     t.string "attack"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
