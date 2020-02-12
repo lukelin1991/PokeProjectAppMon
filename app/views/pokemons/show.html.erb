@@ -1,2 +1,32 @@
+
+    <style>
+        body{
+            background-image: url("/pokemonbackgrounds/ashpokemon.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        
+        }
+
+    </style>
+    
+    
+    
+    
+    <div class="text-align-container">
 <img src=<%= @pokemon.big_img %> alt="Picture goes here">
-<%= @pokemon.name %>
+
+<h3>Hi! My name is <%= @pokemon.name %> </h3>
+
+<h3>I fall into these type(s): <%= @pokemon.poke_type%> </h3>
+
+<h3>My favorite move is: <%= @pokemon.attack%>.</h3>
+
+<h3><%= @pokemon.poke_phrase%></h3>
+    
+    </div>
+
+
+
+
+
+

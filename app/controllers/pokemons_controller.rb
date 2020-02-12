@@ -1,5 +1,5 @@
 class PokemonsController < ApplicationController
-    before_action :set_pokemon, only: [:show]
+    before_action :set_pokemon, only: [:show, :update, :pokemon_to_trainer]
 
     def index
         @pokemons = Pokemon.all
@@ -7,6 +7,16 @@ class PokemonsController < ApplicationController
 
     def show
     end
+
+    def update
+
+    end
+
+    def pokemon_to_trainer
+       current_trainer << @pokemon.id
+    end
+
+    
         
 
 
