@@ -1,11 +1,12 @@
-
+Gymleader.destroy_all
 Pokemon.destroy_all
+Pokeball.destroy_all
 
 # ----------------------Gym Leaders ----------------#
 brock = Gymleader.create(name: "Brock", specialty: "Rock", city: "Pewter City", badge_name:"Boulder Badge", badge_img: "/badges/01.png", portrait: "/gymleader_show/brock/brock_portrait.png", headshot: "/gymleader_show/brock/brock_real_headshot.png", fullbody: "/gymleader_show/brock/brock_fullbody.png", sprite: "/gymleader_show/brock/brock_sprite.png")
 misty = Gymleader.create(name: "Misty", specialty: "Water", city: "Cerulean City", badge_name:"Cascade Badge", badge_img: "/badges/02.png", portrait: "/gymleader_show/misty/misty_portrait.png", headshot: "/gymleader_show/misty/misty_real_headshot.png", fullbody: "/gymleader_show/misty/misty_fullbody.png", sprite: "/gymleader_show/misty/misty_sprite.png")
 surge = Gymleader.create(name: "Lt. Surge", specialty: "Electric", city: "Vermilion City", badge_name:"Thunder Badge", badge_img: "/badges/03.png", portrait: "/gymleader_show/lt_surge/lt_surge_portrait.png", headshot: "/gymleader_show/lt_surge/lt_surge_real_headshot.png", fullbody: "/gymleader_show/lt_surge/lt_surge_fullbody.png", sprite: "/gymleader_show/lt_surge/lt_surge_sprite.png")
-erika = Gymleader.create(name: "Erika", specialty: "Grass", city: "Celadon City", badge_name:"Rainbow Badge", badge_img: "/badges/04.png", portrait: "/gymleader_show/erika/erika_portrait.png", headshot: "/gymleader_show/erika/erika_real_headshotpng", fullbody: "/gymleader_show/erika/erika_fullbody.png", sprite: "/gymleader_show/erika/erika_sprite.png")
+erika = Gymleader.create(name: "Erika", specialty: "Grass", city: "Celadon City", badge_name:"Rainbow Badge", badge_img: "/badges/04.png", portrait: "/gymleader_show/erika/erika_portrait.png", headshot: "/gymleader_show/erika/erika_real_headshot.png", fullbody: "/gymleader_show/erika/erika_fullbody.png", sprite: "/gymleader_show/erika/erika_sprite.png")
 koga = Gymleader.create(name: "Koga", specialty: "Poison", city: "Fuchsia City", badge_name:"Soul Badge", badge_img: "/badges/05.png", portrait: "/gymleader_show/koga/koga_portrait.png", headshot: "/gymleader_show/koga/koga_real_headshot.png", fullbody: "/gymleader_show/koga/koga_fullbody.png", sprite: "/gymleader_show/koga/koga_sprite.png")
 sabrina = Gymleader.create(name: "Sabrina", specialty: "Psychic", city: "Saffron City", badge_name:"Marsh Badge", badge_img: "/badges/06.png", portrait: "/gymleader_show/sabrina/sabrina_portrait.png", headshot: "/gymleader_show/sabrina/sabrina_real_headshot.png", fullbody: "/gymleader_show/sabrina/sabrina_fullbody.png", sprite: "/gymleader_show/sabrina/sabrina_sprite.png")
 blaine = Gymleader.create(name: "Blaine", specialty: "Fire", city: "Cinnabar Island", badge_name:"Volcano Badge", badge_img: "/badges/07.png", portrait: "/gymleader_show/blaine/blaine_portrait.png", headshot: "/gymleader_show/blaine/blaine_real_headshot.png", fullbody: "/gymleader_show/blaine/blaine_fullbody.png", sprite: "/gymleader_show/blaine/blaine_sprite.png")
@@ -195,7 +196,6 @@ dragonair = Pokemon.create(name: "Dragonair", poke_type: dr, sprite: "https://im
 dragonite = Pokemon.create(name: "Dragonite", poke_type: combo(dr, fl), sprite: "https://img.pokemondb.net/sprites/black-white/anim/normal/dragonite.gif", big_img:"/pokemon/149.jpg", attack: "Hyper Beam")
 mewtwo = Pokemon.create(name: "Mewtwo", poke_type: psy, sprite: "https://img.pokemondb.net/sprites/black-white/anim/normal/mewtwo.gif", big_img:"/pokemon/150.jpg", attack: "Psystrike")
 mew = Pokemon.create(name: "Mew", poke_type: psy, sprite: "https://img.pokemondb.net/sprites/black-white/anim/normal/mew.gif", big_img:"/pokemon/151.jpg", attack: "Aura Sphere")
-#----------------------Badges------------------------#
 
 #---------------------Pokeballs----------------------#
 p "I seeded all over myself."
