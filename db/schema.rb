@@ -38,10 +38,8 @@ ActiveRecord::Schema.define(version: 2020_02_10_204841) do
   create_table "pokeballs", force: :cascade do |t|
     t.integer "pokemon_id"
     t.integer "trainer_id"
-    t.integer "badge_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["badge_id"], name: "index_pokeballs_on_badge_id"
     t.index ["pokemon_id"], name: "index_pokeballs_on_pokemon_id"
     t.index ["trainer_id"], name: "index_pokeballs_on_trainer_id"
   end
@@ -57,7 +55,8 @@ ActiveRecord::Schema.define(version: 2020_02_10_204841) do
   end
 
   create_table "trainers", force: :cascade do |t|
-    t.string "name"
+    t.string "username"
+    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -14,4 +14,19 @@
 
 <h1>Congratulations on beginning your new pokemon journey!</h1>
 
-<div class="no_center"><%= render "form" %></div>
+<div class="no_center">
+    <%= form_for @trainer do |f|%>
+        <ul>
+            <li>
+                <%= f.label :username %>
+                <%= f.text_field :username %>
+            </li>
+
+            <li>
+                <%= f.label :password %>
+                <%= f.password_field :password %>
+            </li>
+        </ul>
+        <%= f.submit %>
+    <% end %>
+</div>

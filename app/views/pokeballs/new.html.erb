@@ -1,0 +1,7 @@
+<h1>Gotta Catch 'Em All!</h1>
+
+<% if @logged_in_trainer.total_pokemons == 0 %>
+    <%=render "form"%>
+<% else %>
+    <%= render "form2"%>
+<% end %>

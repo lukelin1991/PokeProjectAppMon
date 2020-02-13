@@ -9,8 +9,13 @@ class Trainer < ApplicationRecord
         0 + self.badges.count
     end
 
-    def total_pokemon
-        self.pokemons.count
+    def total_pokemons
+        0 + self.pokeballs.count
     end
-    
+
+    def can_catch_pokemon
+        self.total_badges >= self.total_pokemons
+    end
+
+    has_secure_password
 end

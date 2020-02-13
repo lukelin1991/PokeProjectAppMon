@@ -4,6 +4,7 @@ class CreateGymleaders < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :specialty
       t.string :city
+
       # image st00f.
       t.string :badge_name
       t.string :badge_img

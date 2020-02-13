@@ -1,0 +1,18 @@
+<h1>Welcome Fellow Pokemon Trainer!</h1>
+
+<ul>
+<%if @pokeballs.count == 0 %>
+    <li>You need to go get a starter pokemon from Prof. Oak!</li><br>
+    <li><%= button_to "Get My Starter Pokemon", new_pokeball_path, method: :get %></li>
+<% else %>
+    <li>Here are your pokemon.</li><br>
+    <% @pokeballs.each do |pokeball| %>
+        <li>
+            <img src=<%= pokeball.pokemon.sprite%>>
+            <% if @logged_in_trainer.id == pokeball.trainer_id %>
+                <%= button_to "Release Pokemon", pokeball_path(pokeball), method: :delete %>
+            <% end %>
+        </li>
+    <% end %>
+<% end %>
+</ul>

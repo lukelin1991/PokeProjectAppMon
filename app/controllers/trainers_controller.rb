@@ -1,29 +1,23 @@
 class TrainersController < ApplicationController
-    def index
-        @trainers = Trainer.all
-    end
-
-    def show
-        @trainer = find_me
-    end
-    
     def new
         @trainer = Trainer.new
     end
     
     def create
         @trainer = Trainer.create(trainer_params)
-        redirect_to root_path
+        if @trainer.valid?
+            log_in_trainer @trainer.id
+            redirect_to root_path
+        else
+            flash[:errors] = @trainer.errors.full_messages
+            redirect_to new_trainer_path
+        end
     end
 
     private
-
-    def find_me
-        Trainer.find(params[:id])
-    end
-
+    
     def trainer_params
-        params.require(:trainer).permit(:name, :pokemon_ids)
+        params.require(:trainer).permit(:username, :password)
     end
 
 end

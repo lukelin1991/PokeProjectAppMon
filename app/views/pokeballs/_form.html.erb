@@ -1,0 +1,15 @@
+<!-- Starter Pokemon Form-->
+<%= form_for @pokeball do |f|%>
+    <%= f.label "Pick your Starter Pokemon" %>
+
+    <%= f.collection_radio_buttons :pokemon_id, Pokemon.starters, :id, :name %> 
+
+    <ul class="move_sprite">
+    <% Pokemon.starters.each do |starter|%>
+        <li class="starter_sprite_form"><img src=<%= starter.sprite %>></li>
+    <%end%>
+    </ul>
+
+    <%= f.submit%>
+    
+<% end %>
