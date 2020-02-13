@@ -2,6 +2,15 @@ class Pokemon < ApplicationRecord
     has_many :pokeballs
     has_many :trainers, through: :pokeballs
 
+    def self.starters
+        starters = []
+        starters << Pokemon.first
+        starters << Pokemon.fourth
+        starters << Pokemon.all[6]
+        starters << Pokemon.all[24]
+        starters << Pokemon.all[132]
+        starters
+    end
 
 
     def poke_phrase

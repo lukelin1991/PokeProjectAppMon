@@ -7,7 +7,7 @@ body {
 <ul>
     <% @gymleaders.each do |gymleader| %>
         <li><img src= <%=gymleader.headshot%>><br>
-            <%= button_to gymleader.name, gymleader_path(gymleader), method: "get"%>
+        <%= button_to gymleader.name, gymleader_path(gymleader), method: "get"%>
         </li>
     <% end %>
 </ul>

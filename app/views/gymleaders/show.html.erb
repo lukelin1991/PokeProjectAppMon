@@ -1,2 +1,20 @@
-<img src=<%= @gymleader.fullbody %> alt="Picture goes here">
-<%= @gymleader.name %>
+<style>
+body {
+    background-image: url('/gymleader_show/gymshowpage.png');
+    background-size: cover;
+  }
+</style>
+
+<h2>You have entered the <%= @gymleader.city %> Gym!</h2>
+
+<div class ="coolshit">
+<img src=<%= @gymleader.sprite %> alt="sprite goes here">
+=> <img src=<%=@gymleader.fullbody %> alt="fullbody here">
+=> <img src=<%= @gymleader.portrait %> alt="portrait here">
+</div>
+
+
+<h3><%= @gymleader.name%> is the leader of this gym!</h3>
+
+<h4>All trainers who defeat this gym leader will receive the <%= @gymleader.badge_name %></h4>
+<img src=<%= @gymleader.badge_img %> alt="badge thingy" class="badge_img">
