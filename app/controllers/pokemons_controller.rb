@@ -12,9 +12,12 @@ class PokemonsController < ApplicationController
 
     end
 
-    def pokemon_to_trainer
-       current_trainer << @pokemon.id
-    end
+    # def pokemon_to_trainer
+    #     @pokemon = Pokemon.find(params[:id])
+    #     @trainer = Trainer.find(params[:id])
+    #     @trainer.pokemons << @pokemon
+    #    redirect_to trainer_path(@trainer)
+    # end
 
     
         

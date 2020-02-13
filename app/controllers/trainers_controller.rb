@@ -1,6 +1,7 @@
 class TrainersController < ApplicationController
     def index
         @trainers = Trainer.all
+        
     end
 
     def show
@@ -8,12 +9,16 @@ class TrainersController < ApplicationController
     end
     
     def new
-        @trainer = Trainer.new
+        @trainer = Trainer.new 
+        @pokemons = Pokemon.all 
+       
     end
     
     def create
         @trainer = Trainer.create(trainer_params)
-        redirect_to root_path
+        
+        redirect_to trainer_path(@trainer)
+
     end
 
     private

@@ -13,10 +13,6 @@ blaine = Gymleader.create(name: "Blaine", specialty: "Fire", city: "Cinnabar Isl
 gio = Gymleader.create(name: "Giovanni", specialty: "Ground", city: "Viridian City", badge_name:"Earth Badge", badge_img: "/badges/08.png", portrait: "/gymleader_show/giovanni/giovanni_portrait.png", headshot: "/gymleader_show/giovanni/giovanni_real_headshot.png", fullbody: "/gymleader_show/giovanni/giovanni_fullbody.png", sprite: "/gymleader_show/giovanni/giovanni_sprite.png")
 
 #------------Pokeballs-------------#
-poke = Pokeball.create(balltype: "Poke-Ball") # first 2 badges, u can use this. 
-great = Pokeball.create(balltype: "Great-Ball") #requires badge 3 and 4. 
-ultra = Pokeball.create(balltype: "Ultra-Ball") #5 and 6. 
-master = Pokeball.create(balltype: "Master-Ball") #7 and 8. 
 #WORRY AFTER BASICS ESTABLISHED.
 
 #-------type helpers ------#
@@ -196,6 +192,12 @@ dragonair = Pokemon.create(name: "Dragonair", poke_type: dr, sprite: "https://im
 dragonite = Pokemon.create(name: "Dragonite", poke_type: combo(dr, fl), sprite: "https://img.pokemondb.net/sprites/black-white/anim/normal/dragonite.gif", big_img:"/pokemon/149.jpg", attack: "Hyper Beam")
 mewtwo = Pokemon.create(name: "Mewtwo", poke_type: psy, sprite: "https://img.pokemondb.net/sprites/black-white/anim/normal/mewtwo.gif", big_img:"/pokemon/150.jpg", attack: "Psystrike")
 mew = Pokemon.create(name: "Mew", poke_type: psy, sprite: "https://img.pokemondb.net/sprites/black-white/anim/normal/mew.gif", big_img:"/pokemon/151.jpg", attack: "Aura Sphere")
+
+
+t = Trainer.create(name: "Tyler")
+
+p1 = Pokeball.create(pokemon_id: mew, trainer_id: t)
+
 
 #---------------------Pokeballs----------------------#
 p "I seeded all over myself."

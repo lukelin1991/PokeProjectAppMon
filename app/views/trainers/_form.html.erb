@@ -1,3 +1,14 @@
+<% if flash[:errors] %>
+<% flash[:errors].each do |error|%>
+<%= error %>
+    <%end%>
+<%end%>
+
+
+<p class= "img-center1">
+<img src=<%= "/pokemonbackgrounds/pickstarter.gif"%>>
+</p>
+
 
 <%= form_for @trainer do |f|%>
     <%= f.label :name %>
@@ -6,7 +17,7 @@
     <%= f.label "Pick your Starter Pokemon" %>
 
     <%# # <%=f.collection_select :pokemon_ids, Pokemon.all, :id, :name %>  
-    <%= f.collection_radio_buttons :pokemon_ids, Pokemon.starters, :id, :name %> 
+    <%= f.collection_radio_buttons  :pokemon_ids, Pokemon.starters, :id, :name %> 
     
     <ul class="move_sprite"><% Pokemon.starters.each do |starter|%>
         <li class="starter_sprite_form"><img src=<%= starter.sprite %>></li>

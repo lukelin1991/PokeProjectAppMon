@@ -3,15 +3,32 @@
 
     <style>
         body{
-            background-image: url("/pokemonbackgrounds/ashpokemon.jpg");
+            background-image: url("/pokemonbackgrounds/pikachu_background.png");
             background-size: 100%;
             background-repeat: no-repeat;
         
         }
 
         h3{
-            color: cyan;
+            color: black;
         }
+
+        .text-align-container {
+        text-align: center;
+        margin-left: auto;
+        opacity: 100%;
+        width: 300px;
+        height: 50px;
+        length: 100px;
+
+  }
+
+  .moveimage
+{
+    position: relative;
+    top: 100px;
+}
+
 
     </style>
     
@@ -19,25 +36,22 @@
     
     
 
-
-
-
-    <br>
-    <br>
-    <br>
     <div class="text-align-container">
-<img src=<%= @pokemon.big_img %> alt="Picture goes here">
 
- <h3 id="electric"> My name is <%= @pokemon.name %> </h3>
+    <img class= "moveimage" src=<%= @pokemon.big_img %> alt="Picture goes here">
+        <br>
+        <br>
+        <br>
+        <h3>My name is <%= @pokemon.name %> </h3>
+        
 
- <h3> I fall into these type(s): <%= @pokemon.poke_type%> </h3>
+        <h3> These are my type(s): <%= @pokemon.poke_type%> </h3>
+        
+        <h3> My favorite move is: <%= @pokemon.attack%></h3>
+        
+        <h3> <%= @pokemon.poke_phrase%></h3>
 
- <h3> My favorite move is: <%= @pokemon.attack%></h3>
-
- <h3> <%= @pokemon.poke_phrase%></h3>
-
- <h3><%= button_to "Invite #{@pokemon.name} to join your team", trainer_path, method: :post%>
-    
+        <%= button_to "Pokedex", pokemons_path, method: :get %>
     </div>
 
 
