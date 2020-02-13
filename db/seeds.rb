@@ -12,13 +12,6 @@ sabrina = Gymleader.create(name: "Sabrina", specialty: "Psychic", city: "Saffron
 blaine = Gymleader.create(name: "Blaine", specialty: "Fire", city: "Cinnabar Island", badge_name:"Volcano Badge", badge_img: "/badges/07.png", portrait: "/gymleader_show/blaine/blaine_portrait.png", headshot: "/gymleader_show/blaine/blaine_real_headshot.png", fullbody: "/gymleader_show/blaine/blaine_fullbody.png", sprite: "/gymleader_show/blaine/blaine_sprite.png")
 gio = Gymleader.create(name: "Giovanni", specialty: "Ground", city: "Viridian City", badge_name:"Earth Badge", badge_img: "/badges/08.png", portrait: "/gymleader_show/giovanni/giovanni_portrait.png", headshot: "/gymleader_show/giovanni/giovanni_real_headshot.png", fullbody: "/gymleader_show/giovanni/giovanni_fullbody.png", sprite: "/gymleader_show/giovanni/giovanni_sprite.png")
 
-#------------Pokeballs-------------#
-poke = Pokeball.create(balltype: "Poke-Ball") # first 2 badges, u can use this. 
-great = Pokeball.create(balltype: "Great-Ball") #requires badge 3 and 4. 
-ultra = Pokeball.create(balltype: "Ultra-Ball") #5 and 6. 
-master = Pokeball.create(balltype: "Master-Ball") #7 and 8. 
-#WORRY AFTER BASICS ESTABLISHED.
-
 #-------type helpers ------#
 def combo(a, b)
     a + ", " + b
