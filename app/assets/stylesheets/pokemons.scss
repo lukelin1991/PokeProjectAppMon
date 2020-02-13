@@ -1,11 +1,13 @@
 // Place all the styles related to the pokemons controller here.
 // They will automatically be included in application.css.
-<<<<<<< HEAD
-// You can use Sass (SCSS) here: http://sass-lang.com/
-=======
+
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .text-align-container {
-    text-align: center;
+    text-align: inline;
+    opacity: 100%;
+    border: 5px solid rgb(88, 2, 7);
+    border-radius: 8px;
+    width: 337px;
   }
 
   li {
@@ -21,7 +23,5 @@
     margin-right: auto;
  }
 
- h3 {
-  color: black;
-}
->>>>>>> steven
+ 
+

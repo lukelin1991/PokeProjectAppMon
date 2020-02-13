@@ -1,15 +1,19 @@
 class TrainersController < ApplicationController
+    def index
+        @trainers = Trainer.all
+    end
+
+    def show
+        @trainer = find_me
+    end
+    
     def new
-        @pokemons = Pokemon.all
         @trainer = Trainer.new
     end
     
     def create
-        @pokemons = Pokemon.all
         @trainer = Trainer.create(trainer_params)
-    end
-
-    def destroy
+        redirect_to root_path
     end
 
     private
@@ -21,4 +25,5 @@ class TrainersController < ApplicationController
     def trainer_params
         params.require(:trainer).permit(:name, :pokemon_ids)
     end
+
 end
