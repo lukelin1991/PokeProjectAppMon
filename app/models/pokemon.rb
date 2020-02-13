@@ -1,5 +1,5 @@
 class Pokemon < ApplicationRecord
-    has_many :pokeballs
+    has_many :pokeballs, dependent: :destroy
     has_many :trainers, through: :pokeballs
 
     def self.starters

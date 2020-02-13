@@ -1,9 +1,12 @@
 class Trainer < ApplicationRecord
-    has_many :badges
+    has_many :badges, dependent: :destroy
     has_many :gymleaders, through: :badges
 
-    has_many :pokeballs
+    has_many :pokeballs, dependent: :destroy
     has_many :pokemons, through: :pokeballs
+
+    validates_presence_of :username
+    validates_uniqueness_of :username
 
     def total_badges
         0 + self.badges.count

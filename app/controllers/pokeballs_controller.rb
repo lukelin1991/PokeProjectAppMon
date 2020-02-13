@@ -1,7 +1,7 @@
 class PokeballsController < ApplicationController
 
     def index
-        @pokeballs = Pokeball.all
+        @pokeballs = @logged_in_trainer.pokeballs
     end
 
     def new
@@ -19,7 +19,7 @@ class PokeballsController < ApplicationController
         else
             flash[:notification] = "You need more badges to get more pokemon!"
         end
-        redirect_to pokeballs_path
+        redirect_to root_path
     end
     
     def destroy

@@ -3,5 +3,6 @@
 <%= form_for @pokeball do |f| %>
 
     <%=f.collection_select :pokemon_id, Pokemon.all, :id, :name %> 
-
-<%end %> 
+    
+    <%= f.submit %>
+<% end %> 

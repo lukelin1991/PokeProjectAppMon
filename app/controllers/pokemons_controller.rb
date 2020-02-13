@@ -1,30 +1,13 @@
 class PokemonsController < ApplicationController
-    before_action :set_pokemon, only: [:show, :update, :pokemon_to_trainer]
 
     def index
-        @pokemons = Pokemon.all
+        if request.path != pokemons_path
+            redirect_to pokemons_path
+        end
+        @pokemons = Pokemon.includes(:pokeballs).all
     end
 
     def show
-    end
-
-    def update
-
-    end
-
-    def pokemon_to_trainer
-       current_trainer << @pokemon.id
-    end
-
-    
-        
-
-
-
-
-    private
-
-    def set_pokemon
         @pokemon = Pokemon.find(params[:id])
     end
 end
