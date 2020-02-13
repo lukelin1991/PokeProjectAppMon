@@ -17,4 +17,14 @@ body {
 <h3><%= @gymleader.name%> is the leader of this gym!</h3>
 
 <h4>All trainers who defeat this gym leader will receive the <%= @gymleader.badge_name %></h4>
+
+<h4>
+  <%= form_for [@gymleader, Badge.new], local:true do |f|%>
+    <button type="submit" class='<%= @can_battle ? "Battle" : "Cannot Battle"%>'>
+      
+    
+    </button>
+  <% end %>
+</h4>
+
 <img src=<%= @gymleader.badge_img %> alt="badge thingy" class="badge_img">

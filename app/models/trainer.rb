@@ -20,5 +20,9 @@ class Trainer < ApplicationRecord
         self.total_badges >= self.total_pokemons
     end
 
+    def can_battle
+       !self.can_catch_pokemon
+    end
+
     has_secure_password
 end

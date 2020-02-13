@@ -1,7 +1,10 @@
 class GymleadersController < ApplicationController
 
     def index
-        @gymleaders = Gymleader.all 
+        if request.path != gymleaders_path
+            redirect_to gymleaders_path
+        end
+        @gymleaders = Gymleader.includes(:badges).all
     end
 
     def show

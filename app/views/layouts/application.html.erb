@@ -18,6 +18,7 @@
         <%= link_to "Gyms", gymleaders_path %> | <br>
         Welcome back, Trainer <%= @logged_in_trainer.username %>!<br>
         <%= link_to "My Pokemons", pokeballs_path%>
+        
         Badges: <%= @logged_in_trainer.total_badges %>
         Pokemons: <%= @logged_in_trainer.total_pokemons %>
         <p class="log_out_button_move"><%= button_to "Log out", log_out_path, method: :delete %></p>

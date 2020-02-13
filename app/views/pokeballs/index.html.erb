@@ -7,7 +7,6 @@
             <li>Here are your pokemon.</li><br>
             <li>
                 <img src=<%= pokeball.pokemon.sprite %>>
-                Owned by: <%= pokeball.trainer.username %>
                 <% if @logged_in_trainer.id == pokeball.trainer_id %>
                 <%= button_to "Release Pokemon", pokeball_path(pokeball), method: :delete %>
                 <% end %>
