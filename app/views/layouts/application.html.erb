@@ -9,6 +9,18 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.css'>
   </head>
+  <style>
+  .logout_button{
+    margin-left: 685px;
+
+  }
+
+  header{
+    background-color: grey;
+    opacity: 70%;
+    color: black;
+  }
+  </style>
 
   <body>
     <header>
@@ -21,7 +33,7 @@
         
         Badges: <%= @logged_in_trainer.total_badges %>
         Pokemons: <%= @logged_in_trainer.total_pokemons %>
-        <p class="log_out_button_move"><%= button_to "Log out", log_out_path, method: :delete %></p>
+        <%= button_to "Log out", log_out_path, :class => "logout_button" , method: :delete %>
 
       <% else %>
         <%= link_to "Login Trainer", new_login_path %> |

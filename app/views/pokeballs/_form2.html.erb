@@ -5,6 +5,14 @@ body {
     background-size: 100%;
    
 }
+
+h3{
+  position: relative; 
+	top: 39px;
+	right: 490px;
+  color:black;
+  margin-left:auto;
+}
 .gymleader_hover:hover{
 }
 
@@ -12,10 +20,10 @@ body {
  
  
  
- <label>Pokemon
+ 
 <%= form_for @pokeball do |f| %>
 
-  Pokemon List: <%=f.collection_select :pokemon_id, Pokemon.all, :id, :name %> 
+<h3>  Pokemon List Select:</h3> <%=f.collection_select :pokemon_id, Pokemon.all, :id, :name %> 
     
     <%= f.submit value: "Catch Pokemon!" %>
 <% end %> </label>

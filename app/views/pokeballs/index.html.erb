@@ -10,14 +10,26 @@ body{
 h1{
     color:black;
 }
+h2{
+    color:black;
+}
+
+h4{
+    color:black;
+}
+
+.badge{
+    margin: 10px;
+    width: 100px;
+}
 
 
 </style>
+    <h2><%="#{@logged_in_trainer.username}'s party"%></h2>
 <ul>
     <% if @logged_in_trainer.total_pokemons > 0 %>
 
         <% @pokeballs.each do |pokeball| %>
-          <h2><%="#{@logged_in_trainer.username}'s party"%></h2><br>
             <li>
                 <img src=<%= pokeball.pokemon.sprite %>>
                 <% if @logged_in_trainer.id == pokeball.trainer_id %>
@@ -33,6 +45,6 @@ h1{
 
 <ul>
     <% @badges.each do |badge|%>
-        <li><img src="<%= badge.gymleader.badge_img %>"></li>
+      <img class="badge" src="<%= badge.gymleader.badge_img %>"><br>
     <%end%>
 </ul>
