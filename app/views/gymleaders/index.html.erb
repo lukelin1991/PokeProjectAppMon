@@ -9,7 +9,8 @@ body {
 </style>
 <ul>
     <% @gymleaders.each do |gymleader| %>
-        <li><img src= <%=gymleader.headshot%> class="gymleader_hover"><br>
+        <li><img src= <%=gymleader.headshot%> class="gymleader_hover">
+        <br>
         <%= button_to gymleader.name, gymleader_path(gymleader), method: "get"%>
         </li>
     <% end %>

@@ -7,6 +7,7 @@ class CreatePokemons < ActiveRecord::Migration[5.2]
       t.string :sprite
       t.string :big_img
       t.string :attack
+      t.string :background
 
       t.timestamps
     end

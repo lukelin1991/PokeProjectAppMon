@@ -1,8 +1,21 @@
 <!-- Regular Pokemon Form-->
+ <style>
+body {
+    background-image: url('/pokemonbackgrounds/bulbzlowspeed.gif');
+    background-size: 100%;
+   
+}
+.gymleader_hover:hover{
+}
 
+</style>
+ 
+ 
+ 
+ <label>Pokemon
 <%= form_for @pokeball do |f| %>
 
-    <%=f.collection_select :pokemon_id, Pokemon.all, :id, :name %> 
+  Pokemon List: <%=f.collection_select :pokemon_id, Pokemon.all, :id, :name %> 
     
-    <%= f.submit %>
-<% end %> 
+    <%= f.submit value: "Catch Pokemon!" %>
+<% end %> </label>

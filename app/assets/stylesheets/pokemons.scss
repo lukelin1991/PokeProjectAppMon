@@ -5,17 +5,18 @@
 .text-align-container {
     text-align: inline;
     opacity: 100%;
-    border: 5px solid rgb(88, 2, 7);
-    border-radius: 8px;
+    border: 0px solid rgb(88, 2, 7);
+   
+    border-radius: 0px;
     width: 337px;
   }
 
   li {
     display: inline-block;
-    margin: 10px;
+    margin: 20px;
     border: 5px solid rgb(88, 2, 7);
     border-radius: 7px;
-    padding: 3px 3px 3px 3px;
+    padding: 20px 20px 20px 20px;
 }
 .img-center{
     display: block;

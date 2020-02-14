@@ -13,7 +13,7 @@ class CreateGymleaders < ActiveRecord::Migration[5.2]
       t.string :headshot
       t.string :sprite
       t.string :fullbody
-
+      t.string :bg
       t.timestamps
     end
   end

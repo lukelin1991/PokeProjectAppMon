@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 2020_02_10_204841) do
     t.string "headshot"
     t.string "sprite"
     t.string "fullbody"
+    t.string "bg"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -50,6 +51,7 @@ ActiveRecord::Schema.define(version: 2020_02_10_204841) do
     t.string "sprite"
     t.string "big_img"
     t.string "attack"
+    t.string "background"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

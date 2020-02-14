@@ -1,7 +1,17 @@
 <style>
 body {
-    background-image: url('/gymleader_show/gymshowpage.png');
+    background-image: url('<%= @gymleader.bg.to_s%>');
     background-size: cover;
+  }
+  h2{
+    color: black;
+  }
+  h3{
+    color: black;
+  }
+
+  h4{
+    color: black;
   }
 </style>
 
@@ -28,3 +38,4 @@ body {
 </h4>
 
 <img src=<%= @gymleader.badge_img %> alt="badge thingy" class="badge_img">
+<%=button_to "Return to Gym Leaders", gymleaders_path, method: :get%>

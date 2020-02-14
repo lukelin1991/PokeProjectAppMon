@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   #-----Pokemons---------#
   resources :pokemons, only: [:index, :show]
   resources :pokeballs, only: [:index, :show, :new, :create, :destroy]
+    
   #------Gym Leaders-----#
   resources :gymleaders, only: [:index, :show] do
     resources :badges, only: [:create, :index]

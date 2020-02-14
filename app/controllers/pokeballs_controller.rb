@@ -1,7 +1,9 @@
 class PokeballsController < ApplicationController
+    
 
     def index
         @pokeballs = @logged_in_trainer.pokeballs
+        @badges = @logged_in_trainer.badges
     end
 
     def new

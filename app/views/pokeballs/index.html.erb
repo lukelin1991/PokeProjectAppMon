@@ -1,10 +1,23 @@
 <h1>Welcome Fellow Pokemon Trainer!</h1>
 
+<style>
+body{
+        background-image: url('/pokemonbackgrounds/trainershow.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+h1{
+    color:black;
+}
+
+
+</style>
 <ul>
     <% if @logged_in_trainer.total_pokemons > 0 %>
 
         <% @pokeballs.each do |pokeball| %>
-            <li>Here are your pokemon.</li><br>
+          <h2><%="#{@logged_in_trainer.username}'s party"%></h2><br>
             <li>
                 <img src=<%= pokeball.pokemon.sprite %>>
                 <% if @logged_in_trainer.id == pokeball.trainer_id %>
@@ -13,7 +26,13 @@
             </li>
         <% end %>
     <% else %>
-        <li>You need to go get a starter pokemon from Prof. Oak!</li><br>
-        <li><%= button_to "Get My Starter Pokemon", new_pokeball_path, method: :get %></li>
+        <h4>You can't go on your journey alone! You need to go get a starter Pokemon from Prof. Oak!</h3><br>
+        <li><%= button_to "Choose My Starter Pokemon", new_pokeball_path, method: :get %></li>
     <% end %>
+</ul>
+
+<ul>
+    <% @badges.each do |badge|%>
+        <li><img src="<%= badge.gymleader.badge_img %>"></li>
+    <%end%>
 </ul>
