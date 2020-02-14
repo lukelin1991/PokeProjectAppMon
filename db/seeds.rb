@@ -191,5 +191,4 @@ dragonite = Pokemon.create(name: "Dragonite", poke_type: combo(dr, fl), sprite: 
 mewtwo = Pokemon.create(name: "Mewtwo", poke_type: psy, sprite: "https://img.pokemondb.net/sprites/black-white/anim/normal/mewtwo.gif", big_img:"/pokemon/150.jpg", attack: "Psystrike", background: "/pokemonbackgrounds/bg150.jpg")
 mew = Pokemon.create(name: "Mew", poke_type: psy, sprite: "https://img.pokemondb.net/sprites/black-white/anim/normal/mew.gif", big_img:"/pokemon/151.jpg", attack: "Aura Sphere", background: "/pokemonbackgrounds/bg151.jpg")
 
-#---------------------Pokeballs----------------------#
-p "I seeded all over myself."
+p "Bulbasaur uses Leech Seed."
