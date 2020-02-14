@@ -26,6 +26,7 @@ img {
 .badge_img {
     height: 18%;
     width: 18%;
+    border-radius: 45%;
 }
 
   li {
