@@ -1,6 +1,7 @@
+Pokeball.destroy_all
+Badge.destroy_all
 Gymleader.destroy_all
 Pokemon.destroy_all
-Pokeball.destroy_all
 
 # ----------------------Gym Leaders ----------------#
 brock = Gymleader.create(name: "Brock", specialty: "Rock", city: "Pewter City", badge_name:"Boulder Badge", badge_img: "/badges/01.png", portrait: "/gymleader_show/brock/brock_portrait.png", headshot: "/gymleader_show/brock/brock_real_headshot.png", fullbody: "/gymleader_show/brock/brock_fullbody.png", sprite: "/gymleader_show/brock/brock_sprite.png", bg: '/gymleader_show/brock/brockbg.jpg' )
