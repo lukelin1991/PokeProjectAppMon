@@ -1,3 +1,4 @@
+Trainer.destroy_all
 Pokeball.destroy_all
 Badge.destroy_all
 Gymleader.destroy_all

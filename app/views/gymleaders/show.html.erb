@@ -28,7 +28,7 @@ body {
 
 <h2>You have entered the <%= @gymleader.city %> Gym!</h2>
 
-<div class ="coolshit">
+<div>
 <img src=<%= @gymleader.sprite %> alt="sprite goes here">
 => <img src=<%=@gymleader.fullbody %> alt="fullbody here">
 => <img src=<%= @gymleader.portrait %> alt="portrait here">
@@ -50,5 +50,5 @@ body {
   <% end %>
 
 
-<img src=<%= @gymleader.badge_img %> alt="badge thingy" class="badge_img">
+<img src=<%= @gymleader.badge_img %> alt="badge thing" class="badge_img">
 <%=button_to "Return to Gym Leaders", gymleaders_path, method: :get%>
