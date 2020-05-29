@@ -7,7 +7,7 @@ class BadgesController < ApplicationController
         unless logged_in?
             flash[:notification] = "Please Log in first, unknown trainer!"
             return redirect_to new_login_path
-        end
+    end
 
 
         if @logged_in_trainer.can_battle
